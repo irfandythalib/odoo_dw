@@ -1,0 +1,35 @@
+CREATE TABLE order_report(
+    id serial,
+    d_day smallint,
+    d_month smallint,
+    d_year smallint,
+    day_name smallint,
+    is_weekend varchar,
+    is_holiday varchar,
+    product_code int,
+    product_cat_code varchar,
+    store_code int,
+    qty int,
+    total_sales int,
+    total_cost int
+);
+
+CREATE TABLE dimension_dayname(
+    day_id smallint,
+    day_name varchar
+);
+
+CREATE TABLE dimension_store(
+    store_code int,
+    store_name varchar
+);
+
+CREATE TABLE dimension_product(
+    product_code int,
+    product_name varchar
+);
+
+CREATE TABLE dimension_product_category(
+    category_code int,
+    category_name varchar
+);
