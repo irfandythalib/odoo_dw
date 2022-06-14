@@ -1,0 +1,60 @@
+CREATE TABLE supplier(
+    supplier_code varchar,
+    supplier_name varchar
+);
+
+CREATE TABLE store(
+    store_code serial,
+    store_name varchar,
+    store_district varchar
+);
+
+CREATE TABLE product_category(
+    category_code varchar,
+    category_name varchar,
+    parent_category varchar
+);
+
+CREATE TABLE product(
+    product_code serial,
+    product_name varchar,
+    product_sales_price float,
+    product_cost float,
+    product_cat_1 varchar,
+    product_cat_2 varchar,
+    product_cat_3 varchar,
+    product_cat_4 varchar,
+    product_barcode bigint,
+    product_supplier_code varchar
+);
+
+CREATE TABLE order_transaction(
+    business_day date,
+    product_code serial,
+    store_code serial,
+    qty_1 integer,
+    qty_2 integer,
+    qty_3 integer,
+    qty_4 integer,
+    qty_5 integer,
+    qty_6 integer,
+    qty_7 integer,
+    qty_8 integer,
+    qty_9 integer,
+    qty_10 integer,
+    qty_11 integer,
+    qty_12 integer,
+    qty_13 integer,
+    qty_14 integer,
+    qty_15 integer,
+    qty_16 integer,
+    qty_17 integer,
+    qty_18 integer,
+    qty_19 integer,
+    qty_20 integer,
+    qty_21 integer,
+    qty_22 integer,
+    qty_23 integer,
+    qty_24 integer,
+    qty_total integer
+);
