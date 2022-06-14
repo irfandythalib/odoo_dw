@@ -1,0 +1,53 @@
+CREATE TABLE product_template(
+    ID bigserial,
+    name varchar,
+    sale_price float,
+    categ_id int,
+    supplier_id int
+);
+
+CREATE TABLE product_product(
+    ID bigserial,
+    product_tmpl_id int,
+    barcode varchar,
+    default_code varchar
+);
+
+CREATE TABLE product_category(
+    ID bigserial,
+    name varchar,
+    code varchar,
+    parent_id int
+);
+
+CREATE TABLE supplier(
+    ID bigserial,
+    supplier_code varchar,
+    address varchar
+);
+
+CREATE TABLE store(
+    ID bigserial,
+    name varchar,
+    store_district varchar,
+    store_code varchar
+);
+
+CREATE TABLE sales_order(
+    ID bigserial,
+    product_id int,
+    store_id int,
+    date_trans datetime,
+    qty float,
+    price_unit float,
+    discount float,
+    total_amount float
+);
+
+CREATE TABLE inventory(
+    ID bigserial,
+    product_id int,
+    store_id int,
+    date_trans datetime,
+    qty float
+);
