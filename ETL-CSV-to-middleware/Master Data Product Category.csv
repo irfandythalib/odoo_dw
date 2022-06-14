@@ -1,0 +1,17 @@
+categ_code,categ_name,parent_categ
+categ_1,Categ 1,-
+categ_2,Categ 2,-
+categ_3,Categ 3,-
+categ_4,Categ 4,-
+dept_1,Dept 1,categ_1
+dept_2,Dept 2,categ_2
+dept_3,Dept 3,categ_3
+dept_4,Dept 4,categ_4
+line_1,Line 1,dept_1
+line_2,Line 2,dept_2
+line_3,Line 3,dept_3
+line_4,Line 4,dept_4
+div_1,Division 1,div_1
+div_2,Division 2,div_2
+div_3,Division 3,div_3
+div_4,Division 4,div_4
